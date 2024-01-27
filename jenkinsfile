@@ -9,5 +9,10 @@ pipeline {
                 git branch: 'main', url 'https://github.com/DevOps-Raviteja/git-practices.git'
             }
         }
+        stage ("unit testing"){
+            steps {
+                sh 'mvn test'
+            }
+        }
     }
 }
