@@ -9,5 +9,15 @@ pipeline {
                 git branch: 'main', url 'https://github.com/DevOps-Raviteja/git-practices.git'
             }
         }
+        stage ('Code Compile'){
+            steps {
+                sh 'mvn compile'
+            }
+        }
+        stage ('Code Compile'){
+            steps {
+                sh 'mvn compile'
+            }
+        }
     }
 }
