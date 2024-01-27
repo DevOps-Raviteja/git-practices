@@ -14,10 +14,5 @@ pipeline {
                 sh 'mvn compile'
             }
         }
-        stage ('Code Compile'){
-            steps {
-                sh 'mvn compile'
-            }
-        }
     }
 }
